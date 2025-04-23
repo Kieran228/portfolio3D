@@ -1,13 +1,11 @@
+import Hero from './sections/Hero.jsx'
+
 const App = () => {
   return (
-    <main>
-        <div>
-            <h1>
-                Welcome to my 3D Portfolio
-            </h1>
-        </div>
-    </main>
-)
-}
+    <>
+    <Hero />
+    </>
+  );
+};
 
-export default App
+export default App;
