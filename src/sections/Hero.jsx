@@ -1,9 +1,10 @@
+import Button from "../components/Button.jsx";
 import { words } from "../constants/index.js";
 
 const Hero = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
-      <div className="realtive top-0 left-0 z-10">
+      <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="background" />
       </div>
 
@@ -35,9 +36,19 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
+            <p className="text-white-50 md: text-xl relative z-10 pointer-events-none">
+              Hi, I'm Kieran, a developer with a passion for creating innovative
+              solutions, and a knack for turning ideas into reality.
+            </p>
+            <Button
+              className="md:w-80 md:h-16 w-60 h-12"
+              id="button"
+              text="See my work"
+            />
           </div>
         </header>
         {/* RIGHT: 3D MODEL */}
+        
       </div>
     </section>
   );
