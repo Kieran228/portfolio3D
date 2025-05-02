@@ -4,24 +4,26 @@ import { words } from "../constants/index.js";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import AnimatedCounter from "../components/AnimatedCounter.jsx";
 
 const Hero = () => {
-
   useGSAP(() => {
-    gsap.fromTo('.hero-text h1',
+    gsap.fromTo(
+      ".hero-text h1",
       {
         y: 50,
         opacity: 0,
       },
       {
+        // the text transitions from 50 to 0 on y axis, fades in with opacity, and stagger/duration is timing with the ease being the animation style
         y: 0,
         opacity: 1,
         stagger: 0.2,
         duration: 1,
-        ease: 'Power2.inOut'
+        ease: "Power2.inOut",
       }
-     )
-  })
+    );
+  });
 
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -75,6 +77,7 @@ const Hero = () => {
           </div>
         </figure>
       </div>
+      <AnimatedCounter />
     </section>
   );
 };
