@@ -5,6 +5,8 @@ Command: npx gltfjsx@6.5.3 optimized-room.glb
 
 
 
+
+
 import React from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 import * as THREE from 'three'
