@@ -59,7 +59,7 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
-            <p className="text-white-50 md: text-xl relative z-10 pointer-events-none">
+            <p className="text-white-50 md: text-xl relative z-10 pointer-events-none overflow-hidden overflow-ellipsis">
               Hi, I'm Kieran, a developer with a passion for creating innovative
               solutions, and a knack for turning ideas into reality.
             </p>
