@@ -1,24 +1,27 @@
-import { useRef } from "react";
+import { useRef } from "react"; // useRef
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap"; // animation library
+import { useGSAP } from "@gsap/react"; // useGsap hook to use it
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // plugin that allows us to trigger animations based on scroll position
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger); // inialize plugin
 
 const ShowcaseSection = () => {
-  const sectionRef = useRef(null);
-  const project1Ref = useRef(null);
+  const sectionRef = useRef(null); // reference to the section (Dom node(div))
+  const project1Ref = useRef(null); // references to each project (dom node which is more divs)
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
 
+  // use gsap hook
   useGSAP(() => {
     const projects = [
+      // define what projects are with an array of our projects with .current attached (.current comes from useRef to indicate which dom element we're referring to.)
       project1Ref.current,
       project2Ref.current,
       project3Ref.current,
     ];
 
+    // for each card, animate the cards from/how "x" to/how "y" with the scroll trigger plugin telling when to trigger the animations.
     projects.forEach((card, index) => {
       gsap.fromTo(
         card,
@@ -40,12 +43,15 @@ const ShowcaseSection = () => {
     });
 
     gsap.fromTo(
+      // same hook applied to the section reference
       sectionRef.current,
       { opacity: 0 },
       { opacity: 1, duration: 1.5 }
     );
+    // the empty array below tells the useGsap hook to only run ONCE when the component mounts.
   }, []);
 
+  // the JSX structure / implementation of references
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
