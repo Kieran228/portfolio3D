@@ -15,7 +15,7 @@ const ShowcaseSection = () => {
   // use gsap hook
   useGSAP(() => {
     const projects = [
-      // define what projects are with an array of our projects with .current attached (.current comes from useRef to indicate which dom element we're referring to.)
+      // define what projects are with an array of our projects with .current attached (.current comes from useRef to indicate which dom element we're referring to while looping.)
       project1Ref.current,
       project2Ref.current,
       project3Ref.current,
@@ -51,7 +51,7 @@ const ShowcaseSection = () => {
     // the empty array below tells the useGsap hook to only run ONCE when the component mounts.
   }, []);
 
-  // the JSX structure / implementation of references
+  // the JSX structure / implementation of references / tailwindcss custom layouts
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
