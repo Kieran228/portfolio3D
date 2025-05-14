@@ -6,18 +6,20 @@ import ShowcaseSection from './sections/ShowcaseSection.jsx';
 import ExperienceSection from './sections/ExperienceSection.jsx';
 import TechStack from './sections/TechStack.jsx';
 import Testimonials from './sections/Testimonials.jsx';
+import Contact from './sections/Contact.jsx';
 
 const App = () => {
   return (
     <>
     <Navbar />
-    {/* <Hero /> */}
+    <Hero />
     <ShowcaseSection />
     <LogoSection />
     <FeatureCards />
     <ExperienceSection />
-    {/* <TechStack /> */}
+    <TechStack />
     <Testimonials />
+    <Contact />
     </>
   );
 };
