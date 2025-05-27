@@ -28,9 +28,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 3, suffix: "+", label: "Years of Experience" },
+  { value: 5, suffix: "+", label: "Satisfied Clients" },
+  { value: 50, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -78,7 +78,7 @@ const abilities = [
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
+    title: "Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
@@ -87,6 +87,8 @@ const abilities = [
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
+
+// Backup images if 3d models don't work
 
 const techStackImgs = [
   {
@@ -121,7 +123,7 @@ const techStackIcons = [
   {
     name: "C++ Developer",
     modelPath: "/models/c-transformed.glb",
-    scale: 0.09,
+    scale: 0.08,
     rotation: [0, 0, 0],
   },
   {
