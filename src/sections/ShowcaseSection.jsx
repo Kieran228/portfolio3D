@@ -59,16 +59,17 @@ const ShowcaseSection = () => {
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde" />
+              <img
+                src="/images/flappybird_cover_rounded.png"
+                alt="FlappyBird"
+              />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Flappy Bird Clone 🐤🪣
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Built with vanilla JavaScript and HTML canvas, this Flappy Bird clone handles real-time rendering, physics simulation (gravity, velocity), and procedural pipe generation. It features sprite-based rendering, event-driven controls, collision detection via AABB logic, and a persistent game loop using requestAnimationFrame for smooth animation and input responsiveness.
               </p>
             </div>
           </div>
@@ -78,18 +79,36 @@ const ShowcaseSection = () => {
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
+                  src="/images/spaceInvadersCoverRounded.png"
+                  alt="Space Invaders"
                 />
               </div>
-              <h2>Library Management Platform</h2>
+              <h2>Space Invaders Clone 👾👽</h2>
+              <p className="text-white-50">
+                Also built using vanilla JavaScript and Canvas, the game features
+                real-time rendering, object movement, keyboard controls,
+                collision detection, and a dynamic level system. Game state is
+                updated on each animation frame to simulate classic Space
+                Invaders-style gameplay.
+              </p>
             </div>
 
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7db]">
-                <img src="/images/project3.png" alt="YC Directory" />
+                <img
+                  src="/images/connect4Cover2rounded.png"
+                  alt="YC Directory"
+                />
               </div>
-              <h2>YC Directory - A startup showcase App</h2>
+              <h2>Connect 4 Clone 🔴🟡</h2>
+              <p className="text-white-50">
+                Developed using vanilla JavaScript and DOM manipulation, the
+                game dynamically generates a 6×7 grid and manages two-player
+                turn logic, piece tracking with a 2D array, column height
+                tracking, and win detection through pattern checks in four
+                directions. Event listeners handle real-time interaction for a
+                responsive browser-based Connect 4 experience.
+              </p>
             </div>
           </div>
         </div>
