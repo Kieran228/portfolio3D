@@ -154,7 +154,7 @@ const expCards = [
     logoPath: "/images/color_pallete_smaller.png",
     title: "Frontend Developer",
     date: "January 2023 - Present",
-    responsibilities: [
+    skills: [
       "Building interactive UIs, managing state, and using component-based architectures.",
       "Crafting accessible, pixel-perfect layouts across devices and screen sizes.",
       "Using tools like Webpack, Vite, or Babel; optimizing performance, lazy loading, and asset bundling",
@@ -167,7 +167,7 @@ const expCards = [
     logoPath: "/images/toolbox_smaller.png",
     title: "Backend Developer",
     date: "June 2020 - Present",
-    responsibilities: [
+    skills: [
       "Handling logic, routing, and business processes efficiently and securely.",
       "Designing schemas, writing performant queries, and ensuring data integrity.",
       "RESTful/GraphQL API creation, OAuth/JWT-based authentication, and security best practices.",
@@ -180,7 +180,7 @@ const expCards = [
     logoPath: "/images/laptop_smaller.png",
     title: "Collaboration & Learning",
     date: "Always",
-    responsibilities: [
+    skills: [
       "Creating clean commits, resolving merge conflicts, using branches effectively.",
       "Explaining technical decisions clearly, giving/receiving code reviews respectfully, and syncing well with designers/devs.",
       "Picking up new tools, patterns, or languages quickly and having the eagerness to learn how to implement them optimally.",
