@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/ContactExperience";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
+  const formRef = useRef(null);
+  
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,13 +22,29 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("Form Submitted:", formData);
+    setLoading(true);
 
-    // Reset form after submission
-    setFormData({ name: "", email: "", message: "" });
+    // we want to use emailjs functionality to send the form
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+
+      // Reset form after submission
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.log("EMAILJS ERROR", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -38,6 +59,7 @@ const Contact = () => {
               <form
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
+                ref={formRef}
               >
                 <div>
                   <label htmlFor="name">Name</label>
@@ -78,10 +100,13 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">Send Message</p>
+                    <p className="text">
+                      {" "}
+                      {loading ? "Sending..." : "Send Message"}{" "}
+                    </p>
                     <div className="arrow-wrapper">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>
@@ -103,4 +128,4 @@ const Contact = () => {
   );
 };
 
-export default Contact
+export default Contact;
