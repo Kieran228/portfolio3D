@@ -59,8 +59,8 @@ const ExperienceSection = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="My Career Overview"
+          title="Summary"
+          sub="🔑Skills I bring to the table"
         />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
@@ -69,7 +69,9 @@ const ExperienceSection = () => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card} index={index}>
                     <div>
-                      <img src={card.imgPath} alt={card.title} />
+                      <p className="text-white-50">
+                        {card.quoteAuthor}
+                      </p>
                     </div>
                   </GlowCard>
                 </div>
@@ -89,7 +91,7 @@ const ExperienceSection = () => {
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="text-white-50 my-5">{card.date}</p>
                         <p className="text-[#839cb5] italic">
-                          Responsibilities
+                          Key Take Aways
                         </p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map((responsibility) => (

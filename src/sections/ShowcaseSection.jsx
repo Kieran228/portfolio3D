@@ -3,6 +3,7 @@ import { useRef } from "react"; // useRef
 import gsap from "gsap"; // animation library
 import { useGSAP } from "@gsap/react"; // useGsap hook to use it
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // plugin that allows us to trigger animations based on scroll position
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger); // inialize plugin
 
@@ -55,7 +56,11 @@ const ShowcaseSection = () => {
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <div className="showcaselayout">
+        <TitleHeader
+          title="2D Games"
+          sub="🛠️ Javascript Projects"
+        />
+        <div className="showcaselayout py-5">
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
@@ -65,11 +70,15 @@ const ShowcaseSection = () => {
               />
             </div>
             <div className="text-content">
-              <h2>
-                Flappy Bird Clone 🐤🪣
-              </h2>
+              <h2>Flappy Bird Clone 🐤🪣</h2>
               <p className="text-white-50 md:text-xl">
-                Built with vanilla JavaScript and HTML canvas, this Flappy Bird clone handles real-time rendering, physics simulation (gravity, velocity), and procedural pipe generation. It features sprite-based rendering, event-driven controls, collision detection via AABB logic, and a persistent game loop using requestAnimationFrame for smooth animation and input responsiveness.
+                Built with vanilla JavaScript and HTML canvas, this Flappy Bird
+                clone handles real-time rendering, physics simulation (gravity,
+                velocity), and procedural pipe generation. It features
+                sprite-based rendering, event-driven controls, collision
+                detection via AABB logic, and a persistent game loop using
+                requestAnimationFrame for smooth animation and input
+                responsiveness.
               </p>
             </div>
           </div>
@@ -85,11 +94,11 @@ const ShowcaseSection = () => {
               </div>
               <h2>Space Invaders Clone 👾👽</h2>
               <p className="text-white-50">
-                Also built using vanilla JavaScript and Canvas, the game features
-                real-time rendering, object movement, keyboard controls,
-                collision detection, and a dynamic level system. Game state is
-                updated on each animation frame to simulate classic Space
-                Invaders-style gameplay.
+                Also built using vanilla JavaScript and Canvas, the game
+                features real-time rendering, object movement, keyboard
+                controls, collision detection, and a dynamic level system. Game
+                state is updated on each animation frame to simulate classic
+                Space Invaders-style gameplay.
               </p>
             </div>
 
@@ -102,12 +111,12 @@ const ShowcaseSection = () => {
               </div>
               <h2>Connect 4 Clone 🔴🟡</h2>
               <p className="text-white-50">
-                Developed using vanilla JavaScript and DOM manipulation, the
-                game dynamically generates a 6×7 grid and manages two-player
-                turn logic, piece tracking with a 2D array, column height
-                tracking, and win detection through pattern checks in four
-                directions. Event listeners handle real-time interaction for a
-                responsive browser-based Connect 4 experience.
+                You guessed it, more vanilla JavaScript and DOM manipulation.
+                This game dynamically generates a 6×7 grid and manages
+                two-player turn logic, piece tracking with a 2D array, column
+                height tracking, and win detection through pattern checks in
+                four directions. Event listeners handle real-time interaction
+                for a responsive browser-based Connect 4 experience.
               </p>
             </div>
           </div>
