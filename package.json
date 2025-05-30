@@ -1,6 +1,6 @@
 {
   "name": "portfolio3d",
-  "homepage": "https://kieran228.github.io/portfolio3D/",
+  "homepage": "https://kieran228.github.io/portfolio3d/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --add"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
