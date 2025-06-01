@@ -65,7 +65,7 @@ const ShowcaseSection = () => {
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
               <img
-                src="/images/flappybird_cover_rounded.png"
+                src="./images/flappybird_cover_rounded.png"
                 alt="FlappyBird"
               />
             </div>
@@ -88,7 +88,7 @@ const ShowcaseSection = () => {
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
                 <img
-                  src="/images/spaceInvadersCoverRounded.png"
+                  src="./images/spaceInvadersCoverRounded.png"
                   alt="Space Invaders"
                 />
               </div>
@@ -105,7 +105,7 @@ const ShowcaseSection = () => {
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7db]">
                 <img
-                  src="/images/connect4Cover2rounded.png"
+                  src="./images/connect4Cover2rounded.png"
                   alt="YC Directory"
                 />
               </div>
