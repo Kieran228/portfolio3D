@@ -4,6 +4,8 @@ import gsap from "gsap"; // animation library
 import { useGSAP } from "@gsap/react"; // useGsap hook to use it
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // plugin that allows us to trigger animations based on scroll position
 import TitleHeader from "../components/TitleHeader";
+import { expCards } from "../constants";
+import ClickableGlowCard from "../components/ClickableGlowCard";
 
 gsap.registerPlugin(ScrollTrigger); // inialize plugin
 
@@ -12,6 +14,9 @@ const ShowcaseSection = () => {
   const project1Ref = useRef(null); // references to each project (dom node which is more divs)
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
+
+  const flappyBirdData = expCards.find(card => card.flappyBirdLink)
+  const flappyBirdLive = expCards.find(card => card.liveWebsiteLink)
 
   // use gsap hook
   useGSAP(() => {
@@ -56,10 +61,7 @@ const ShowcaseSection = () => {
   return (
     <section id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <TitleHeader
-          title="2D Games"
-          sub="🛠️ Javascript Projects"
-        />
+        <TitleHeader title="2D Games" sub="🛠️ Javascript Projects" />
         <div className="showcaselayout py-5">
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
@@ -69,8 +71,30 @@ const ShowcaseSection = () => {
                 alt="FlappyBird"
               />
             </div>
+            <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
+              <a href={flappyBirdData.flappyBirdLink} target="_blank">
+                <ClickableGlowCard>
+                  <div className="text-green-400 text-center">
+                    <p>Code</p>
+                  </div>
+                </ClickableGlowCard>
+              </a>
+
+              <a href={flappyBirdLive.liveWebsiteLink} target="_blank">
+                <ClickableGlowCard>
+                  <div className="text-blue-500 text-center">
+                    <p>
+                      Live
+                    </p>
+                  </div>
+                </ClickableGlowCard>
+              </a>
+            </div>
+            
             <div className="text-content">
-              <h2>Flappy Bird Clone 🐤🪣</h2>
+              <h2>
+                Flappy Bird Clone 🐤🪣
+              </h2>
               <p className="text-white-50 md:text-xl">
                 Built with vanilla JavaScript and HTML canvas, this Flappy Bird
                 clone handles real-time rendering, physics simulation (gravity,
@@ -92,7 +116,20 @@ const ShowcaseSection = () => {
                   alt="Space Invaders"
                 />
               </div>
-              <h2>Space Invaders Clone 👾👽</h2>
+              <h2>
+                Space Invaders Clone 👾👽{" "}
+                <a
+                  className="text-green-400"
+                  href="https://github.com/Kieran228/SpaceInvaders"
+                  target="_blank"
+                >
+                  Code
+                </a>{" "}
+                |{" "}
+                <a className="text-blue-500" target="_blank" href="">
+                  Live
+                </a>
+              </h2>
               <p className="text-white-50">
                 Also built using vanilla JavaScript and Canvas, the game
                 features real-time rendering, object movement, keyboard
@@ -109,7 +146,20 @@ const ShowcaseSection = () => {
                   alt="YC Directory"
                 />
               </div>
-              <h2>Connect 4 Clone 🔴🟡</h2>
+              <h2>
+                Connect 4 Clone 🔴🟡{" "}
+                <a
+                  className="text-green-400"
+                  href="https://github.com/Kieran228/Connect4"
+                  target="_blank"
+                >
+                  Code
+                </a>{" "}
+                |{" "}
+                <a className="text-blue-500" target="_blank" href="">
+                  Live
+                </a>{" "}
+              </h2>
               <p className="text-white-50">
                 You guessed it, more vanilla JavaScript and DOM manipulation.
                 This game dynamically generates a 6×7 grid and manages

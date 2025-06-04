@@ -15,7 +15,7 @@ const HeroExperience = () => {
         enablePan={false}
         enablezoom={!isTablet}
         maxDistance={20}
-        minDistance={5}
+        minDistance={17}
         minPolarAngle={Math.PI / 5}
         maxPolarAngle={Math.PI / 2}
       />

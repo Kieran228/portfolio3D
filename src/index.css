@@ -78,7 +78,7 @@ section {
 
   .grid-12-cols {
     @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
-  }
+  } 
 
   .hero-layout {
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
@@ -456,6 +456,23 @@ section {
 }
 
 .glow {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  filter: saturate(200);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Glow css for Clickable GlowCard Component */
+.clickGlow {
   pointer-events: none;
   position: absolute;
   width: 100%;
