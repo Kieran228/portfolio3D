@@ -154,8 +154,8 @@ const expCards = [
     logoPath: "./images/color_pallete_smaller.png",
     title: "Frontend Developer",
     date: "January 2023 - Present",
-    flappyBirdLink: "https://github.com/Kieran228/FlappyBirdJS",
-    liveWebsiteLink: "https://github.com/Kieran228/FlappyBirdJS",
+    flappyBirdCodeLink: "https://github.com/Kieran228/FlappyBirdJS",
+    flapyBirdLiveLink: "https://github.com/Kieran228/FlappyBirdJS",
     skills: [
       "Building interactive UIs, managing state, and using component-based architectures.",
       "Crafting accessible, pixel-perfect layouts across devices and screen sizes.",
@@ -169,6 +169,8 @@ const expCards = [
     logoPath: "./images/toolbox_smaller.png",
     title: "Backend Developer",
     date: "June 2020 - Present",
+    spaceInvadersCodeLink: "https://github.com/Kieran228/SpaceInvaders",
+    spaceInvadersLiveLink: "https://github.com/Kieran228/SpaceInvaders",
     skills: [
       "Handling logic, routing, and business processes efficiently and securely.",
       "Designing schemas, writing performant queries, and ensuring data integrity.",
@@ -182,6 +184,8 @@ const expCards = [
     logoPath: "./images/laptop_smaller.png",
     title: "Collaboration & Learning",
     date: "Always",
+    connect4CodeLink: "https://github.com/Kieran228/Connect4",
+    connect4LiveLink: "https://github.com/Kieran228/Connect4",
     skills: [
       "Creating clean commits, resolving merge conflicts, using branches effectively.",
       "Explaining technical decisions clearly, giving/receiving code reviews respectfully, and syncing well with designers/devs.",

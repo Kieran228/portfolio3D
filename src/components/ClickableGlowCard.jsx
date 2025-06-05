@@ -26,12 +26,9 @@ const ClickableGlowCard = ({ card, children, index }) => {
     <div
       ref={(el) => (cardRefs.current[index] = el)}
       onMouseMove={handleMouseMove(index)}
-      className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
+      className="card card-border timeline-card rounded-xl p-5 mb-5 break-inside-avoid-column"
     >
       <div className="clickGlow" />
-      <div className="mb-5">
-        
-      </div>
       {children}
     </div>
   );

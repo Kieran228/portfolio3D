@@ -15,8 +15,17 @@ const ShowcaseSection = () => {
   const project2Ref = useRef(null);
   const project3Ref = useRef(null);
 
-  const flappyBirdData = expCards.find(card => card.flappyBirdLink)
-  const flappyBirdLive = expCards.find(card => card.liveWebsiteLink)
+  // flappy bird data variables
+  const flappyBirdData = expCards.find((card) => card.flappyBirdCodeLink);
+  const flappyBirdLive = expCards.find((card) => card.flapyBirdLiveLink);
+
+  // flappy bird data variables
+  const spaceInvadersCode = expCards.find((card) => card.spaceInvadersCodeLink);
+  const spaceInvadersLive = expCards.find((card) => card.spaceInvadersLiveLink);
+
+  // flappy bird data variables
+  const connect4Code = expCards.find((card) => card.connect4CodeLink);
+  const connect4Live = expCards.find((card) => card.connect4LiveLink);
 
   // use gsap hook
   useGSAP(() => {
@@ -71,30 +80,24 @@ const ShowcaseSection = () => {
                 alt="FlappyBird"
               />
             </div>
-            <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
-              <a href={flappyBirdData.flappyBirdLink} target="_blank">
+            <div className="lg:columns-2 md:columns-2 columns-1 mt-8">
+              <a href={flappyBirdData.flappyBirdCodeLink} target="_blank">
                 <ClickableGlowCard>
-                  <div className="text-green-400 text-center">
-                    <p>Code</p>
-                  </div>
+                  <div className="text-green-400 text-center">Code</div>
                 </ClickableGlowCard>
               </a>
 
-              <a href={flappyBirdLive.liveWebsiteLink} target="_blank">
+              <a href={flappyBirdLive.flapyBirdLiveLink} target="_blank">
                 <ClickableGlowCard>
                   <div className="text-blue-500 text-center">
-                    <p>
-                      Live
-                    </p>
+                    <p>Live</p>
                   </div>
                 </ClickableGlowCard>
               </a>
             </div>
-            
+
             <div className="text-content">
-              <h2>
-                Flappy Bird Clone 🐤🪣
-              </h2>
+              <h2 className="text-center">Flappy Bird Clone 🐤🪣</h2>
               <p className="text-white-50 md:text-xl">
                 Built with vanilla JavaScript and HTML canvas, this Flappy Bird
                 clone handles real-time rendering, physics simulation (gravity,
@@ -116,20 +119,21 @@ const ShowcaseSection = () => {
                   alt="Space Invaders"
                 />
               </div>
-              <h2>
-                Space Invaders Clone 👾👽{" "}
-                <a
-                  className="text-green-400"
-                  href="https://github.com/Kieran228/SpaceInvaders"
-                  target="_blank"
-                >
-                  Code
-                </a>{" "}
-                |{" "}
-                <a className="text-blue-500" target="_blank" href="">
-                  Live
+
+              <div className="lg:columns-2 md:columns-2 columns-1">
+                <a target="_blank" href={spaceInvadersCode.spaceInvadersCodeLink}>
+                  <ClickableGlowCard>
+                    <div className="text-green-500 text-center">Code</div>
+                  </ClickableGlowCard>
                 </a>
-              </h2>
+                <a target="_blank" href={spaceInvadersLive.spaceInvadersLiveLink}>
+                  <ClickableGlowCard>
+                    <div className="text-blue-500 text-center">Live</div>
+                  </ClickableGlowCard>
+                </a>
+              </div>
+
+              <h2 className="text-center">Space Invaders Clone 👾👽</h2>
               <p className="text-white-50">
                 Also built using vanilla JavaScript and Canvas, the game
                 features real-time rendering, object movement, keyboard
@@ -146,19 +150,22 @@ const ShowcaseSection = () => {
                   alt="YC Directory"
                 />
               </div>
-              <h2>
-                Connect 4 Clone 🔴🟡{" "}
-                <a
-                  className="text-green-400"
-                  href="https://github.com/Kieran228/Connect4"
-                  target="_blank"
-                >
-                  Code
-                </a>{" "}
-                |{" "}
-                <a className="text-blue-500" target="_blank" href="">
-                  Live
-                </a>{" "}
+
+                  <div className="lg:columns-2 md:columns-2 columns-1">
+                <a target="_blank" href={connect4Code.connect4CodeLink}>
+                  <ClickableGlowCard>
+                    <div className="text-green-500 text-center">Code</div>
+                  </ClickableGlowCard>
+                </a>
+                <a target="_blank" href={connect4Live.connect4LiveLink}>
+                  <ClickableGlowCard>
+                    <div className="text-blue-500 text-center">Live</div>
+                  </ClickableGlowCard>
+                </a>
+              </div>
+
+              <h2 className="text-center">
+                Connect 4 Clone 🔴🟡
               </h2>
               <p className="text-white-50">
                 You guessed it, more vanilla JavaScript and DOM manipulation.
