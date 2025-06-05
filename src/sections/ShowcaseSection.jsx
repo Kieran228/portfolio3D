@@ -120,7 +120,7 @@ const ShowcaseSection = () => {
                 />
               </div>
 
-              <div className="lg:columns-2 md:columns-2 columns-1">
+              <div className="lg:columns-2 md:columns-2 columns-1 mt-8">
                 <a target="_blank" href={spaceInvadersCode.spaceInvadersCodeLink}>
                   <ClickableGlowCard>
                     <div className="text-green-500 text-center">Code</div>
@@ -151,7 +151,7 @@ const ShowcaseSection = () => {
                 />
               </div>
 
-                  <div className="lg:columns-2 md:columns-2 columns-1">
+                  <div className="lg:columns-2 md:columns-2 columns-1 mt-8">
                 <a target="_blank" href={connect4Code.connect4CodeLink}>
                   <ClickableGlowCard>
                     <div className="text-green-500 text-center">Code</div>
