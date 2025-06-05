@@ -121,12 +121,18 @@ const ShowcaseSection = () => {
               </div>
 
               <div className="lg:columns-2 md:columns-2 columns-1 mt-8">
-                <a target="_blank" href={spaceInvadersCode.spaceInvadersCodeLink}>
+                <a
+                  target="_blank"
+                  href={spaceInvadersCode.spaceInvadersCodeLink}
+                >
                   <ClickableGlowCard>
                     <div className="text-green-500 text-center">Code</div>
                   </ClickableGlowCard>
                 </a>
-                <a target="_blank" href={spaceInvadersLive.spaceInvadersLiveLink}>
+                <a
+                  target="_blank"
+                  href={spaceInvadersLive.spaceInvadersLiveLink}
+                >
                   <ClickableGlowCard>
                     <div className="text-blue-500 text-center">Live</div>
                   </ClickableGlowCard>
@@ -151,7 +157,7 @@ const ShowcaseSection = () => {
                 />
               </div>
 
-                  <div className="lg:columns-2 md:columns-2 columns-1 mt-8">
+              <div className="lg:columns-2 md:columns-2 columns-1 mt-8">
                 <a target="_blank" href={connect4Code.connect4CodeLink}>
                   <ClickableGlowCard>
                     <div className="text-green-500 text-center">Code</div>
@@ -164,9 +170,7 @@ const ShowcaseSection = () => {
                 </a>
               </div>
 
-              <h2 className="text-center">
-                Connect 4 Clone 🔴🟡
-              </h2>
+              <h2 className="text-center">Connect 4 Clone 🔴🟡</h2>
               <p className="text-white-50">
                 You guessed it, more vanilla JavaScript and DOM manipulation.
                 This game dynamically generates a 6×7 grid and manages
