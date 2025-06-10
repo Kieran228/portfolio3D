@@ -155,7 +155,7 @@ const expCards = [
     title: "Frontend Developer",
     date: "January 2023 - Present",
     flappyBirdCodeLink: "https://github.com/Kieran228/FlappyBirdJS",
-    flapyBirdLiveLink: "https://github.com/Kieran228/FlappyBirdJS",
+    flapyBirdLiveLink: "https://kieran228.github.io/FlappyBirdJS/",
     skills: [
       "Building interactive UIs, managing state, and using component-based architectures.",
       "Crafting accessible, pixel-perfect layouts across devices and screen sizes.",
