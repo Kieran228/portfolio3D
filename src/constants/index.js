@@ -170,7 +170,7 @@ const expCards = [
     title: "Backend Developer",
     date: "June 2020 - Present",
     spaceInvadersCodeLink: "https://github.com/Kieran228/SpaceInvaders",
-    spaceInvadersLiveLink: "https://github.com/Kieran228/SpaceInvaders",
+    spaceInvadersLiveLink: "https://kieran228.github.io/SpaceInvaders/",
     skills: [
       "Handling logic, routing, and business processes efficiently and securely.",
       "Designing schemas, writing performant queries, and ensuring data integrity.",
