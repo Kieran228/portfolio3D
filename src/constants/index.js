@@ -185,7 +185,7 @@ const expCards = [
     title: "Collaboration & Learning",
     date: "Always",
     connect4CodeLink: "https://github.com/Kieran228/Connect4",
-    connect4LiveLink: "https://github.com/Kieran228/Connect4",
+    connect4LiveLink: "https://kieran228.github.io/Connect4/",
     skills: [
       "Creating clean commits, resolving merge conflicts, using branches effectively.",
       "Explaining technical decisions clearly, giving/receiving code reviews respectfully, and syncing well with designers/devs.",
