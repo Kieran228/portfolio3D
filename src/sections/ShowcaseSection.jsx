@@ -3,6 +3,7 @@ import { useRef } from "react"; // useRef
 import gsap from "gsap"; // animation library
 import { useGSAP } from "@gsap/react"; // useGsap hook to use it
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // plugin that allows us to trigger animations based on scroll position
+
 import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constants";
 import ClickableGlowCard from "../components/ClickableGlowCard";
